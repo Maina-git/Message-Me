@@ -43,17 +43,15 @@ const SignIn: React.FC<Props> = ({ setIsAuth }) => {
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center gap-10">
-      <h1 className="text-6xl text-pink-800">Message Me</h1>
-      <h2 className="text-2xl text-blue-400">Sign in With Google To Continue</h2>
+      <h1 className="text-3xl text-pink-800">Message Me</h1>
+      <h2 className="text-xl text-blue-400">Sign in With Google To Continue</h2>
       <button
         onClick={signInWithGoogle}
-        className="flex items-center gap-5 text-xl bg-pink-800 text-white px-5 py-2 rounded-[20px]"
-      >
+        className="flex items-center gap-5 text-xl bg-pink-800 text-white px-5 py-2 rounded-[20px]">
         <FcGoogle />
         Sign In with Google
       </button>
     </div>
   );
 };
-
 export default SignIn;
